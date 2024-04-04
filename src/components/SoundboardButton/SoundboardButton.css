@@ -1,0 +1,22 @@
+.soundboardButton {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idle {
+    background-color: pink;
+}
+
+.playing {
+    background-color: darkseagreen;
+}
+
+.audioNameSpan {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
