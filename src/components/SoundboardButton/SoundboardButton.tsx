@@ -30,12 +30,14 @@ const SoundboardButton = forwardRef<HTMLDivElement, SoundboardButtonProps>((prop
     })
 
     const playAudio = () => {
+        const duration = audio.duration;
         setBgColor(PLAY_STATUS.PLAYING);
         audio.play();
     }
 
     return (
         <div ref={ref} className={"soundboardButton " + bgColor} onClick={playAudio}>
+            <div className={"soundboardButtonAnimDiv"}/>
             <span className="audioNameSpan">{`${id} ${caption}`}</span>
         </div>
     )

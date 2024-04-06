@@ -6,6 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: pink;
+}
+
+.soundboardButtonAnimDiv {
+    background: linear-gradient(0deg, darkseagreen, pink);
+    animation: gradient 15s ease infinite;
 }
 
 .idle {
@@ -13,10 +19,19 @@
 }
 
 .playing {
-    background-color: darkseagreen;
+    background: linear-gradient(pink 0 0) bottom/100% 90% no-repeat #ececec;
+    animation: right 3s linear;
 }
 
 .audioNameSpan {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
+
+@keyframes right {
+    from {
+        background-size: 100% 0%;
+    }
+}
+
